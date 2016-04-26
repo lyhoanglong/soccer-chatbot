@@ -6,8 +6,9 @@ module.exports = [{
     handler: {
       async: async function(req, reply) {
         try {
-          if (req.query('hub.verify_token') === 'QAoi9ft8PgQn(A') {
-            return reply(req.query('hub.challenge'));
+          if (req.query['hub.verify_token'] === 'QAoi9ft8PgQn(A') {
+            let text = req.query['hub.challenge'];
+            return reply(text);
           }
 
           return reply('Error, wrong token');

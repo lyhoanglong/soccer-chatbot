@@ -12,6 +12,7 @@
   "author": "Long Ly Hoang <longly@seespace.co>",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.10.0",
     "bluebird": "^3.3.5",
     "good": "^6.6.3",
     "good-console": "^5.3.2",
